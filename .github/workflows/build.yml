@@ -41,7 +41,7 @@ jobs:
       - name: Build and test
         run: ./mvnw verify
         env:
-          SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/configuration_loader_test
-          SPRING_DATASOURCE_USERNAME: ci
-          SPRING_DATASOURCE_PASSWORD: ci
+          CONFIG_LOADER_DATASOURCE_URL: jdbc:postgresql://localhost:5432/configuration_loader_test
+          CONFIG_LOADER_DATASOURCE_USERNAME: ci
+          CONFIG_LOADER_DATASOURCE_PASSWORD: ci
           SPRING_JPA_HIBERNATE_DDL_AUTO: create-drop
