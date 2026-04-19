@@ -1,0 +1,11 @@
+config-loader:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/configuration_loader_test
+    username: ci
+    password: ci
+    driver-class-name: org.postgresql.Driver
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
